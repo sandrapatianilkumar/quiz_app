@@ -1,0 +1,12 @@
+<form ng-controller="LoginCtrl">
+
+   <div class="col-sm-10 .container">
+        <label>Enter User Code:</label>
+ 	<input class="form-control" type="number" id="focusedInput" ng-model="usercode">
+   <span style="color:red;">{{validationMsg}}</span>
+	<br/>
+	<button type="button" class="btn btn-default active" ng-click="searchRole(usercode)">Enter</button>
+  	
+   </div>
+  
+</form>

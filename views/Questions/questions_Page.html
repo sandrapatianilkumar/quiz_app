@@ -1,0 +1,13 @@
+<div class=".container" ng-controller="QuestionCtrl">
+  <h2 ng-show="disp">Questions:</h2>
+  <br/>
+  <div ng-repeat="question in  questions">
+    <div ng-if="question.active">
+    <p ng-if="disp">{{question.question}}</p>
+    <h2 ng-if="!disp">{{message}}</h2>
+    <br/><br/>
+    <button type="button" class="btn btn-info active" ng-click="ClickOnYes($index, 'Y')"  ng-show="disp">yes</button>
+    <button type="button" class="btn btn-danger active" ng-click="ClickOnYes($index, 'N')"  ng-show="disp">No</button>
+    </div>
+  </div>
+</div>
